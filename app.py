@@ -57,7 +57,7 @@ if use_bg:
             tmp_bg.close()
             background_path = tmp_bg.name
     else:
-        bg_url = st.text_input("🌐 Image or GIF URL \nEx: https://media.giphy.com/media/LpwBqCorPvZC0/giphy.gif")
+        bg_url = st.text_input("🌐 Image or GIF URL", placeholder="https://media.giphy.com/media/LpwBqCorPvZC0/giphy.gif")
         if bg_url:
             is_gif = bg_url.lower().endswith(".gif")
             background_path = bg_url
