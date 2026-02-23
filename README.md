@@ -12,16 +12,6 @@ You can try the live app here: [Animated QR Code Generator](https://generate-ani
 
 ---
 
-## 📦 Project Structure
-
-├── app.py # Streamlit app
-├── requirements.txt # Python dependencies
-├── qr code generation.ipynb # Jupyter Notebook demo: generate QR codes with/without backgrounds
-├── README.md # Project documentation
-└── ANIMATED QR CODE GENERATOR.gif (optional header/logo)
-
-
-
 ---
 
 ## ⚙️ Features
