@@ -1,4 +1,4 @@
 streamlit>=1.30
 segno>=1.6
 Pillow>=9.5
-qrcode-artistic=3.0.2
+qrcode-artistic==3.0.2
