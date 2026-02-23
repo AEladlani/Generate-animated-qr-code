@@ -1,12 +1,12 @@
 # Animated QR Code Generator
-
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://generate-animated-qr-code.streamlit.app)
+![Animated QR Demo](ANIMATED_QR_CODE_GENERATOR.gif)
 
 🎨 Generate QR codes with optional **image or GIF backgrounds**, fully interactive and downloadable.
 
 ---
 
 ## 🔗 Live App
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://generate-animated-qr-code.streamlit.app)
 
 You can try the live app here: [Animated QR Code Generator](https://generate-animated-qr-code.streamlit.app)
 
