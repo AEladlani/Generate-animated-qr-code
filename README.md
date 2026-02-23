@@ -1,7 +1,4 @@
 # Animated QR Code Generator
-
-![Animated QR Demo](https://github.com/AEladlani/Generate-animated-qr-code/edit/main/ANIMATED_QR_CODE_GENERATOR.gif)
-
 🎨 Generate QR codes with optional **image or GIF backgrounds**, fully interactive and downloadable.
 
 ---
