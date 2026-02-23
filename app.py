@@ -33,11 +33,11 @@ encoded = base64.b64encode(data).decode()
 st.markdown(
     f"""
     <div style="text-align: center;">
-        <img src="data:image/gif;base64,{encoded}" width="800">
+        <img src="data:image/gif;base64,{encoded}" width="900">
     </div>
     """,
     unsafe_allow_html=True)
-st.title("Animated QR Code Generator")
+#st.title("Animated QR Code Generator")
 st.write("Generate QR codes with optional image or GIF backgrounds.")
 data = st.text_input("📌 Data to encode", placeholder="https://example.com")
 scale = st.slider("📏 QR scale", min_value=1, max_value=15, value=5)
