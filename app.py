@@ -40,7 +40,7 @@ st.markdown(
 #st.title("Animated QR Code Generator")
 st.write("Generate QR codes with optional image or GIF backgrounds.")
 data = st.text_input("📌 Data to encode", placeholder="https://example.com")
-scale = st.slider("📏 QR scale", min_value=1, max_value=15, value=5)
+scale = st.slider("📏 QR scale (size of QR code)", min_value=1, max_value=15, value=5)
 use_bg = st.checkbox("Use background")
 background_path = None
 is_gif = False
@@ -62,7 +62,7 @@ if use_bg:
             is_gif = bg_url.lower().endswith(".gif")
             background_path = bg_url
 
-output_name = st.text_input( "💾 Output filename to download (without extension)", value="qr_code")
+output_name = st.text_input( "💾 Output filename to download (without extension)", value="My_QR")
 
 if st.button("🚀 Generate QR Code"):
     if not data:
