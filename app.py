@@ -57,12 +57,12 @@ if use_bg:
             tmp_bg.close()
             background_path = tmp_bg.name
     else:
-        bg_url = st.text_input("🌐 Image or GIF URL (ex:https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGkyMXZ4dmgyMzViZnhpbjUzY2ZiaWNtZ293anR6YjFtNHQ0M3llZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3GSoFVODOkiPBFArlu/giphy.gif)", placeholder="https://media.giphy.com/media/LpwBqCorPvZC0/giphy.gif")
+        bg_url = st.text_input("🌐 Image or GIF URL (ex: https://media.giphy.com/media/LpwBqCorPvZC0/giphy.gif)", placeholder="https://media.giphy.com/media/LpwBqCorPvZC0/giphy.gif")
         if bg_url:
             is_gif = bg_url.lower().endswith(".gif")
             background_path = bg_url
 
-output_name = st.text_input( "💾 Output filename (without extension)", value="qr_code")
+output_name = st.text_input( "💾 Output filename to download (without extension)", value="qr_code")
 
 if st.button("🚀 Generate QR Code"):
     if not data:
