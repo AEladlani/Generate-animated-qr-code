@@ -41,7 +41,7 @@ st.markdown(
 st.write("Generate QR codes with optional image or GIF backgrounds.")
 data = st.text_input("📌 Data to encode", placeholder="https://example.com")
 scale = st.slider("📏 QR scale", min_value=1, max_value=15, value=5)
-use_bg = st.checkbox("🎨 Use background")
+use_bg = st.checkbox("Use background")
 background_path = None
 is_gif = False
 if use_bg:
@@ -57,7 +57,7 @@ if use_bg:
             tmp_bg.close()
             background_path = tmp_bg.name
     else:
-        bg_url = st.text_input("🌐 Image or GIF URL", placeholder="https://media.giphy.com/media/LpwBqCorPvZC0/giphy.gif")
+        bg_url = st.text_input("🌐 Image or GIF URL (ex:https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGkyMXZ4dmgyMzViZnhpbjUzY2ZiaWNtZ293anR6YjFtNHQ0M3llZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3GSoFVODOkiPBFArlu/giphy.gif)", placeholder="https://media.giphy.com/media/LpwBqCorPvZC0/giphy.gif")
         if bg_url:
             is_gif = bg_url.lower().endswith(".gif")
             background_path = bg_url
